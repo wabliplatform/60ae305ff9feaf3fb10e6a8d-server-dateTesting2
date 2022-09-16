@@ -14,6 +14,6 @@ jobs:
           password: ${{ secrets.WABLI_SERVER_SSH_PASSWORD }}
           port: ${{ secrets.WABLI_SERVER_SSH_PORT }}
           script: >-
-            ./wabli-applications/deploy.sh -b main -d local-host -r
+            ./wabli-applications/deploy.sh -b main -d laughing-invention -r
             https://github.com/wabliplatform/60ae305ff9feaf3fb10e6a8d-server-dateTesting2.git
-            -f 60ae305ff9feaf3fb10e6a8d-server-dateTesting2 -p 8090
+            -f 60ae305ff9feaf3fb10e6a8d-server-dateTesting2 -p 3010
