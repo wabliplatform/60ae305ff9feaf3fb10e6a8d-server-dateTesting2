@@ -82,6 +82,11 @@ paths:
       summary: Get the element
       tags:
       - project
+      x-custom-code: |
+        /** please generate front sdk */
+        function getProject(param) {
+          console.log("test this code")
+        }
       x-eov-operation-handler: controllers/ProjectController
     put:
       operationId: updateproject
@@ -127,6 +132,16 @@ paths:
       tags:
       - project
       x-method-getAll: "true"
+      x-custom-code: |
+        /** This is a comment template
+          * @param {string} paramName
+          * @return {Array} [Project]
+          */
+        function pgetAll(param) {
+          // insert code here
+          // I change it
+          // I change it a second time
+        }
       x-eov-operation-handler: controllers/ProjectController
 components:
   schemas:

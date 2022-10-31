@@ -22,6 +22,7 @@ const createproject = ({ project }) => new Promise(
     }
   },
 );
+
 /**
 * Delete the element
 *
@@ -42,6 +43,7 @@ const deleteproject = ({ projectId }) => new Promise(
     }
   },
 );
+
 /**
 * Get all the data
 *
@@ -61,6 +63,17 @@ const getAllproject = () => new Promise(
     }
   },
 );
+
+      /** This is a comment template
+  * @param {string} paramName
+  * @return {Array} [Project]
+  */
+function pgetAll(param) {
+  // insert code here
+  // I change it
+  // I change it a second time
+}
+ //this is a test
 /**
 * Get the element
 *
@@ -82,6 +95,12 @@ const getproject = ({ projectId }) => new Promise(
     }
   },
 );
+
+      /** please generate front sdk */
+function getProject(param) {
+  console.log(&quot;test this code&quot;)
+}
+ //this is a test
 /**
 * Updates the element
 *
@@ -103,6 +122,7 @@ const updateproject = ({ projectId, project }) => new Promise(
     }
   },
 );
+
 
 module.exports = {
   createproject,
